@@ -169,7 +169,7 @@ def UsersRecommend(año: int):
         return {"message": "Mi base de datos solo tiene registros entre 2010 y 2015"}
 
     # Aquí cargamos el DataFrame
-    df_games_and_reviews = pd.read_parquet("Datasets/games_and_reviews.parquet")
+    df_games_and_reviews = pd.read_parquet("Data/games_reviews.parquet")
 
     # Filtramos por el año deseado en las fechas de lanzamiento y publicación
     df_filtered = df_games_and_reviews[
